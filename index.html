@@ -117,6 +117,13 @@ section{position:relative}
   margin-top:14px;padding:16px 32px;white-space:nowrap;flex:none;
   font-family:var(--sans);font-size:.86rem;letter-spacing:.1em;
 }
+.menu-close{
+  position:absolute;top:18px;right:22px;z-index:2;background:none;border:none;
+  width:44px;height:44px;display:grid;place-items:center;cursor:pointer;
+  color:var(--gold);font-size:1.5rem;line-height:1;border:1px solid rgba(201,168,76,.4);
+  border-radius:50%;transition:color .3s,transform .3s,border-color .3s;
+}
+.menu-close:hover{color:var(--cream);border-color:var(--gold);transform:rotate(90deg)}
 
 /* ============ HERO ============ */
 #hero{
@@ -683,6 +690,7 @@ footer::before{content:"";position:absolute;inset:0;background:radial-gradient(7
 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mMenu">
+  <button class="menu-close" id="menuClose" aria-label="Close menu">✕</button>
   <a href="#about"><span>01</span>About</a>
   <a href="#dishes"><span>02</span>Signature</a>
   <a href="#menu"><span>03</span>Menu</a>
@@ -1626,6 +1634,10 @@ burger.addEventListener('click', () => {
   const open = mMenu.classList.toggle('open');
   burger.classList.toggle('open', open);
   document.body.style.overflow = open ? 'hidden' : '';
+});
+document.getElementById('menuClose').addEventListener('click', () => {
+  mMenu.classList.remove('open'); burger.classList.remove('open');
+  document.body.style.overflow = '';
 });
 mMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   mMenu.classList.remove('open'); burger.classList.remove('open');
