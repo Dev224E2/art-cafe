@@ -409,13 +409,13 @@ section{position:relative}
 }
 .menu-col-title::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--gold),transparent)}
 .menu-group{margin-bottom:34px}
-.menu-group h4{font-size:.78rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:6px;display:flex;align-items:center;gap:10px}
+.menu-group h4{font-size:.78rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:6px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;min-width:0}
 .menu-group h4::before{content:"";width:22px;height:2px;background:var(--gold)}
 .menu-desc{font-size:.82rem;color:#8a7a66;font-weight:300;margin-bottom:18px;font-style:italic}
 .menu-item{display:flex;align-items:baseline;gap:10px;margin-bottom:13px;position:relative}
-.menu-item .name{font-family:var(--serif);font-size:1.02rem;color:var(--brown);position:relative;flex:none}
+.menu-item .name{font-family:var(--serif);font-size:1.02rem;color:var(--brown);position:relative;flex:0 1 auto;min-width:0}
 .menu-item .dots{flex:1;border-bottom:1.5px dotted rgba(169,136,58,.5);transform:translateY(-4px);min-width:20px}
-.menu-item .price{font-family:var(--serif);color:var(--gold-dark);font-weight:700;font-size:1.02rem;flex:none}
+.menu-item .price{font-family:var(--serif);color:var(--gold-dark);font-weight:700;font-size:1.02rem;flex:none;white-space:nowrap}
 .menu-item .dots,.menu-item .price{transition:color .3s}
 .menu-item:hover .name{color:var(--gold-dark)}
 .menu-item .name::after{content:"";position:absolute;left:0;bottom:-3px;width:0;height:1.5px;background:var(--gold);transition:width .45s var(--ease)}
