@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1400" viewBox="0 0 1400 1400">
+  <defs>
+    <linearGradient id="bg7" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2e2314"/>
+      <stop offset="1" stop-color="#191108"/>
+    </linearGradient>
+    <radialGradient id="rg7" cx="0.5" cy="0.45" r="0.7">
+      <stop offset="0" stop-color="#c9a84c" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1400" height="1400" fill="url(#bg7)"/>
+  <rect width="1400" height="1400" fill="url(#rg7)"/>
+  <ellipse cx="700" cy="990" rx="400" ry="75" fill="#0c0703" opacity="0.9"/>
+  <rect x="380" y="640" width="640" height="70" rx="10" fill="#241a0c" stroke="#c9a84c" stroke-opacity="0.4"/>
+  <ellipse cx="700" cy="940" rx="370" ry="95" fill="#8a6f2e"/>
+  <ellipse cx="700" cy="915" rx="330" ry="75" fill="#1a1208"/>
+  <g transform="rotate(-14 640 760)">
+    <path d="M640 760 l60 -120 l60 120 z" fill="#e8d5a3" opacity="0.85"/>
+    <path d="M655 720 l-20 -40 l40 8 z" fill="#c9a84c"/>
+  </g>
+  <g transform="rotate(16 800 780)">
+    <path d="M800 780 l60 -120 l60 120 z" fill="#e8d5a3" opacity="0.85"/>
+    <path d="M815 740 l-20 -40 l40 8 z" fill="#c9a84c"/>
+  </g>
+  <g>
+    <path d="M560 880 l40 -90 l40 90 z" fill="#fff8f0" opacity="0.9"/>
+    <path d="M700 860 l42 -95 l42 95 z" fill="#fff8f0" opacity="0.95"/>
+    <path d="M830 880 l40 -90 l40 90 z" fill="#fff8f0" opacity="0.9"/>
+  </g>
+  <g fill="#c9a84c" opacity="0.8">
+    <circle cx="600" cy="870" r="7"/>
+    <circle cx="700" cy="850" r="8"/>
+    <circle cx="800" cy="870" r="7"/>
+  </g>
+  <path d="M520 500 q70 -60 140 0" stroke="#c9a84c" stroke-opacity="0.3" stroke-width="3" fill="none"/>
+  <path d="M740 500 q70 -60 140 0" stroke="#c9a84c" stroke-opacity="0.3" stroke-width="3" fill="none"/>
+  <circle cx="240" cy="320" r="3" fill="#e8d5a3" opacity="0.5"/>
+  <circle cx="1160" cy="300" r="3" fill="#e8d5a3" opacity="0.5"/>
+  <circle cx="1180" cy="1120" r="2.5" fill="#e8d5a3" opacity="0.4"/>
+</svg>
